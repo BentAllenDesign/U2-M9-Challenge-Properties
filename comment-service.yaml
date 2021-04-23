@@ -1,0 +1,15 @@
+server:
+  port: 6868
+
+spring:
+  application:
+    name: comment-service
+  datasource:
+    url: jdbc:h2:file:./commentsDB
+    driverClassName: org.h2.Driver
+    username: sa
+    password: password
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: create
